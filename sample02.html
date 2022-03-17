@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap practice</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #999;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: whitesmoke;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            color: white;
+            padding: 5px;
+        }
+        .box:first-child {
+            /* height: 500px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container bg-white d-flex">
+        <div class="box bg-secondary" style="width:150px">1</div>
+        <div class="box bg-primary" style="flex-grow: 2">2</div>
+        <div class="box bg-secondary" style="width: 150px">3</div>
+        <img src="https://picsum.photos/100/100" alt="">
+    </div>
+    
+</body>
+</html>
